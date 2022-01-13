@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOM</title>
+    <style>
+        :root{
+            --side-width:200px;
+            --dark-border:2px solid green;
+            --main-color:orange;
+            --border-color:slateblue;
+            --background-color:slateblue;
+        }
+        h1{
+            color:var(--main-color);
+        }
+        p{
+            color:var(--main-color);
+        }
+        h2{
+            border-color:2px solid slateblue;
+            color:var(--main-color);
+        }
+        h6{
+            color:var(--main-color)
+        }
+
+        footer{
+            clear:both;
+            border: var(--dark-border);
+            color:var(--main-color);
+        }
+        .side-nav,.blogs{
+            float:left;
+            height:500px;
+        }
+        aside{
+            background-color: springgreen;
+            width:var(--side-width);
+        }
+
+        .blogs{
+            background-color:tomato;
+            width: calc(100% - 2*var(--side-width));
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>I am exploring custom porerties</h1>
+        <p>welcome to my website</p>
+    </header>
+    <main>
+        <h2>My awsome conent</h2>
+        <h6>main content</h6>
+        <section name="" id="">
+            <aside class="side-nav">
+                my side navigation
+            </aside>
+            <div class="blogs">
+                <h4>
+                    blogs
+                </h4>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <small><p><small>footer</small></p> </small>
+    </footer>
+</body>
+</html>
